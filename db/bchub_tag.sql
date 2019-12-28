@@ -1,0 +1,15 @@
+INSERT INTO bchub.tag (id, name, type) VALUES (1, '转载', 0);
+INSERT INTO bchub.tag (id, name, type) VALUES (2, '原创', 0);
+INSERT INTO bchub.tag (id, name, type) VALUES (3, '基础', 0);
+INSERT INTO bchub.tag (id, name, type) VALUES (4, '事件', 0);
+INSERT INTO bchub.tag (id, name, type) VALUES (5, '设计模式', 0);
+INSERT INTO bchub.tag (id, name, type) VALUES (6, '组件化', 0);
+INSERT INTO bchub.tag (id, name, type) VALUES (7, '模块化', 0);
+INSERT INTO bchub.tag (id, name, type) VALUES (8, 'MVX', 0);
+INSERT INTO bchub.tag (id, name, type) VALUES (9, '稳定性', 0);
+INSERT INTO bchub.tag (id, name, type) VALUES (10, '流畅度', 0);
+INSERT INTO bchub.tag (id, name, type) VALUES (11, '内存', 0);
+INSERT INTO bchub.tag (id, name, type) VALUES (12, '功耗', 0);
+INSERT INTO bchub.tag (id, name, type) VALUES (13, '包大小', 0);
+INSERT INTO bchub.tag (id, name, type) VALUES (14, '开源解析', 0);
+INSERT INTO bchub.tag (id, name, type) VALUES (15, 'Android源码', 0);

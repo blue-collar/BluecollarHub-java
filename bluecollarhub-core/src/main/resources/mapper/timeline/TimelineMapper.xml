@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.bluecollar.hub.mapper.timeline.TimelineMapper">
+
+    <select id="listTimelinePost" resultType="cn.bluecollar.hub.entity.timeline.TimelinePost">
+        select *  from (
+              select a.id,a.title,a.description,a.create_time,'article' as postType from article a where DATE_FORMAT(a.create_time,'%Y')=#{year} and DATE_FORMAT(a.create_time,'%m')=#{month} and a.publish = 1) t order by t.create_time desc
+    </select>
+
+    <select id="listTimeline" resultType="cn.bluecollar.hub.entity.timeline.Timeline">
+        select t.year,count(t.year) as count from (
+                      select a.id,a.title,a.description,a.create_time,DATE_FORMAT(a.create_time,'%Y') as year from article a where a.publish = 1) t group by t.year order by t.year desc
+    </select>
+
+</mapper>
