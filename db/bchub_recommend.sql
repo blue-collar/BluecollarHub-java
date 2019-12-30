@@ -1,0 +1,1 @@
+INSERT INTO bchub.recommend (id, link_id, type, order_num, title, top) VALUES (1, 1, 0, 1, '关于本站和作者', 1);
